@@ -1,0 +1,160 @@
+<template>
+  <div class="container">
+    <div class="about-container">
+
+        <div>
+        <img src="../assets/machine.jpg" class="img" alt=""></div>
+
+        <div class="text">
+            <h1>Intégrité, Ponctualité et Profesionnalisme : <br>Nos valeurs qui font la différence.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum suscipit, esse magnam in deleniti, sed distinctio facilis, cumque vero tempore nostrum doloremque possimus. Sint nam natus sequi culpa commodi numquam aliquid! Quo, delectus! Laboriosam, ratione esse? Tempora optio illo ad, itaque, tempore assumenda eum necessitatibus eaque doloribus eligendi, dignissimos culpa!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum suscipit, esse magnam in deleniti, sed distinctio facilis, cumque vero tempore nostrum doloremque possimus. Sint nam natus sequi culpa commodi numquam aliquid! Quo, delectus! Laboriosam, ratione esse? Tempora optio illo ad, itaque, tempore assumenda eum necessitatibus eaque doloribus eligendi, dignissimos culpa!</p>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum suscipit, esse magnam in deleniti, sed distinctio facilis, cumque vero tempore nostrum doloremque possimus. Sint nam natus sequi culpa commodi numquam aliquid! Quo, delectus! Laboriosam, ratione esse? Tempora optio illo ad, itaque, tempore assumenda eum necessitatibus eaque doloribus eligendi, dignissimos culpa!</p>
+
+        </div>
+    </div>
+    <div class="advantages">
+      <div class="advantage">
+       <div> <img src="../assets/clock.png" alt="" class="icon"></div>
+        <span>Respect des délais</span>
+      </div>
+          <div class="advantage">
+       <div> <img src="../assets/high-quality.png" alt="" class="icon"></div>
+                <span>Profesionnalisme</span>
+
+      </div>
+          <div class="advantage">
+       <div> <img src="../assets/transparency.png" alt="" class="icon"></div>
+                <span>Transparence</span>
+
+      </div>
+          <div class="advantage">
+       <div> <img src="../assets/engineering.png" alt="" class="icon"></div>
+                <span>Expertise</span>
+
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import Header from '@/components/Header.vue'
+
+export default {
+
+}
+</script>
+
+<style scoped lang='scss'>
+.container{
+  padding: 2%;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+
+    .text{
+            padding: 2%;
+            text-align: left;
+         h1 {    
+
+  color: #000000;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+p{
+    font-size: 18px;
+    line-height: 20px;
+    margin: 15px 0;
+}
+  width: 50vw;
+
+
+    }
+}
+
+.img{
+height: 100%;
+  width: 30vw;
+  object-fit: cover;
+  border-radius: 35% 0 0 35%;
+  }
+
+.advantages{
+  display: flex;
+  margin: 25px 0;
+}
+  .advantage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fdc23e;
+    width: 25%;
+    padding: 15px 0;
+
+    span{
+      font-size: 25px;
+    }
+  }
+
+  .icon{
+    height: 60px;
+    margin: 15px;
+    position: relative;
+    top: 0;
+    transition: .4s ease-in-out;
+
+}
+
+@media (max-width:900px) {
+  .about-container{
+    display: flex;
+    flex-direction: column;
+
+    .text{
+            padding: 2%;
+            text-align: left;
+         h1 {    
+
+  color: #000000;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+p{
+    font-size: 18px;
+    line-height: 20px;
+    margin: 15px 0;
+}
+  width: 90%;
+  margin: auto;
+
+
+    }
+}
+
+.img{
+height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  }
+
+.advantages{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 0;
+
+  .advantage{
+    width: 50%;
+  }
+}
+}
+</style>
